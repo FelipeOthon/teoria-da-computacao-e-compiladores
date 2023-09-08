@@ -1,7 +1,0 @@
-# ninja log v5
-1	61	7159051042729307	CMakeFiles/new_target.dir/idadeAtual.c.obj	badc146620cd7870
-61	142	7159051043524539	new_target.exe	859f2396731ec962
-2	85	7159058291708074	CMakeFiles/new_target.dir/cotacaoDolar.c.obj	eb41c5f83aadaa8a
-2	104	7159058391046112	CMakeFiles/new_target.dir/cotacaoDolar.c.obj	eb41c5f83aadaa8a
-2	64	7159059209263364	CMakeFiles/new_target.dir/cotacaoDolar.c.obj	eb41c5f83aadaa8a
-1	105	7159059940478082	CMakeFiles/new_target.dir/cotacaoDolar.c.obj	eb41c5f83aadaa8a

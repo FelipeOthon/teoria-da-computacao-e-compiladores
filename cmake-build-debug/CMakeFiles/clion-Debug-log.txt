@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\felip\CLionProjects\teoria-da-computacao-e-compiladores Select CMakeLists.txt
