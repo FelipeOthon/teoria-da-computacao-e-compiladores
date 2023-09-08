@@ -40,6 +40,39 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target new_target
+
+
+#############################################
+# Order-only phony target for new_target
+
+build cmake_object_order_depends_target_new_target: phony || CMakeFiles/new_target.dir
+
+build CMakeFiles/new_target.dir/idadeAtual.c.obj: C_COMPILER__new_target_unscanned_Debug C$:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/idadeAtual.c || cmake_object_order_depends_target_new_target
+  DEP_FILE = CMakeFiles\new_target.dir\idadeAtual.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\new_target.dir
+  OBJECT_FILE_DIR = CMakeFiles\new_target.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target new_target
+
+
+#############################################
+# Link the executable new_target.exe
+
+build new_target.exe: C_EXECUTABLE_LINKER__new_target_Debug CMakeFiles/new_target.dir/idadeAtual.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\new_target.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = new_target.exe
+  TARGET_IMPLIB = libnew_target.dll.a
+  TARGET_PDB = new_target.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -66,6 +99,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build new_target: phony new_target.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -74,7 +109,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/cmake-build-debug
 
-build all: phony
+build all: phony new_target.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
