@@ -1,0 +1,2 @@
+C:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/cmake-build-debug/CMakeFiles/rebuild_cache.dir
