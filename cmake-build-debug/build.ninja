@@ -55,6 +55,12 @@ build CMakeFiles/new_target.dir/idadeAtual.c.obj: C_COMPILER__new_target_unscann
   OBJECT_DIR = CMakeFiles\new_target.dir
   OBJECT_FILE_DIR = CMakeFiles\new_target.dir
 
+build CMakeFiles/new_target.dir/cotacaoDolar.c.obj: C_COMPILER__new_target_unscanned_Debug C$:/Users/felip/CLionProjects/teoria-da-computacao-e-compiladores/cotacaoDolar.c || cmake_object_order_depends_target_new_target
+  DEP_FILE = CMakeFiles\new_target.dir\cotacaoDolar.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\new_target.dir
+  OBJECT_FILE_DIR = CMakeFiles\new_target.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target new_target
@@ -63,7 +69,7 @@ build CMakeFiles/new_target.dir/idadeAtual.c.obj: C_COMPILER__new_target_unscann
 #############################################
 # Link the executable new_target.exe
 
-build new_target.exe: C_EXECUTABLE_LINKER__new_target_Debug CMakeFiles/new_target.dir/idadeAtual.c.obj
+build new_target.exe: C_EXECUTABLE_LINKER__new_target_Debug CMakeFiles/new_target.dir/idadeAtual.c.obj CMakeFiles/new_target.dir/cotacaoDolar.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\new_target.dir
