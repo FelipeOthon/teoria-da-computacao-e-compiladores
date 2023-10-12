@@ -36,11 +36,44 @@ void ler(FILE *arq) {
     }
     fclose(arq);
 }
+void read_to_vector(FILE *arq, int vet[2]) {
+    arq = fopen("arquivoC.txt", "r");
+
+    if (arq == NULL) {
+        printf("\nErro ao abrir o arquivo.");
+        return;
+    }
+
+    for (int i = 0; i < 2; ++i) {
+        if (fscanf(arq, "%d", &vet[i]) != 1) {
+            printf("\nErro ao ler o arquivo.");
+            fclose(arq);
+            return;
+        }
+    }
+
+    fclose(arq);
+}
+
+void exibirVetor(int vet[], int tamanho) {
+    printf("Elementos do vetor:\n");
+    for(int i = 0; i < tamanho; i++) {
+        printf("%d\n", vet[i]);
+    }
+    printf("\n");
+}
 
 int main() {
     FILE *arq;
     ler_escrever_printar(arq);
     ler(arq);
+
+    int vet [2];
+
+    read_to_vector(arq, vet);
+    exibirVetor(vet, 2);
+
+
+
     system("pause");
 }
-
